@@ -1,8 +1,8 @@
-package day1
+package adventofcode2015
 
 import "fmt"
 
-func Floor1(s string) int {
+func Day_1_1(s string) int {
 	floor := 0
 	for _, c := range s {
 		if c == '(' {
@@ -16,7 +16,7 @@ func Floor1(s string) int {
 	return floor
 }
 
-func Floor2(s string) int {
+func Day_1_2(s string) int {
 	floor := 0
 	for p, c := range s {
 		if c == '(' {
