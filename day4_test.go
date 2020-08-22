@@ -29,7 +29,7 @@ func Day_4_2(key string) int {
 		hash := md5.Sum(data)
 		hashStr := hex.EncodeToString(hash[:])
 		if strings.HasPrefix(hashStr, "000000") {
-			fmt.Printf("%x\n", hashStr)
+			//fmt.Printf("%x\n", hashStr)
 			return i
 		}
 		i = i + 1
