@@ -51,7 +51,7 @@ func TestDay_1_1(t *testing.T) {
 	test_day_1_1(t, "))(", -1)
 	test_day_1_1(t, ")))", -3)
 	test_day_1_1(t, ")())())", -3)
-	fmt.Printf("Day 1.1 => %v\n", Day_1_1(input("day1.txt")))
+	fmt.Printf("Day 1.1 => %v\n", Day_1_1(input("input/day1.txt")))
 }
 
 func test_day_1_2(t *testing.T, s string, want int) {
@@ -63,5 +63,5 @@ func test_day_1_2(t *testing.T, s string, want int) {
 func TestDay_1_2(t *testing.T) {
 	test_day_1_2(t, ")", 1)
 	test_day_1_2(t, "()())", 5)
-	fmt.Printf("Day 1.2 => %v\n", Day_1_2(input("day1.txt")))
+	fmt.Printf("Day 1.2 => %v\n", Day_1_2(input("input/day1.txt")))
 }
