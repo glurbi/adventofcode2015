@@ -1,8 +1,15 @@
+# run a test
+
+`bazel test //day1:day1_test --test_output=all`
+
+or
+
+`go test github.com/glurbi/adventofcode2015/day1 -v`
+
 # run all tests
 
-`go test`
-`go test -v`
+`bazel test //... --test_output=all`
 
-# run one specific test
+# update bazel BUILD files
 
-`go test -run TestDay_3_1`
+`bazel run //:gazelle`

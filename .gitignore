@@ -1,0 +1,4 @@
+bazel-adventofcode2015
+bazel-bin
+bazel-out
+bazel-testlogs

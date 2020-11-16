@@ -1,0 +1,8 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_test")
+
+go_test(
+    name = "day5_test",
+    srcs = ["day5_test.go"],
+    data = ["day5.txt"],
+    deps = ["//utils"],
+)
