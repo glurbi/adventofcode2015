@@ -1,10 +1,12 @@
-package adventofcode2015
+package day5
 
 import (
 	"fmt"
 	"strconv"
 	"strings"
 	"testing"
+
+	"github.com/glurbi/adventofcode2015/utils"
 )
 
 func Day_5_1(s string) int {
@@ -68,7 +70,7 @@ func TestDay_5_1(t *testing.T) {
 	test_day_5_1(t, "jchzalrnumimnmhp", 0)
 	test_day_5_1(t, "haegwjzuvuyypxyu", 0)
 	test_day_5_1(t, "dvszwmarrgswjxmb", 0)
-	fmt.Printf("Day 5.1 => %v\n", Day_5_1(input("input/day5.txt")))
+	fmt.Printf("Day 5.1 => %v\n", Day_5_1(utils.Input("day5.txt")))
 }
 
 func Day_5_2(s string) int {
@@ -114,9 +116,9 @@ func Day_5_2(s string) int {
 }
 
 func TestDay_5_2(t *testing.T) {
-	assert(t, "qjhvhtzxzqqjkmpb", Day_5_2("qjhvhtzxzqqjkmpb"), 1)
-	assert(t, "xxyxx", Day_5_2("xxyxx"), 1)
-	assert(t, "uurcxstgmygtbstg", Day_5_2("uurcxstgmygtbstg"), 0)
-	assert(t, "ieodomkazucvgmuy", Day_5_2("ieodomkazucvgmuy"), 0)
-	fmt.Printf("Day 5.2 => %v\n", Day_5_2(input("input/day5.txt")))
+	utils.Assert(t, "qjhvhtzxzqqjkmpb", Day_5_2("qjhvhtzxzqqjkmpb"), 1)
+	utils.Assert(t, "xxyxx", Day_5_2("xxyxx"), 1)
+	utils.Assert(t, "uurcxstgmygtbstg", Day_5_2("uurcxstgmygtbstg"), 0)
+	utils.Assert(t, "ieodomkazucvgmuy", Day_5_2("ieodomkazucvgmuy"), 0)
+	fmt.Printf("Day 5.2 => %v\n", Day_5_2(utils.Input("day5.txt")))
 }

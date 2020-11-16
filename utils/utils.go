@@ -1,4 +1,4 @@
-package adventofcode2015
+package utils
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func input(file string) string {
+func Input(file string) string {
 	b, err := ioutil.ReadFile(file)
 	if err != nil {
 		fmt.Print(err)
@@ -14,7 +14,7 @@ func input(file string) string {
 	return string(b)
 }
 
-func assert(t *testing.T, message string, actual int, expected int) {
+func Assert(t *testing.T, message string, actual int, expected int) {
 	if actual != expected {
 		t.Errorf("%s, got %v, expected %v", message, actual, expected)
 	}

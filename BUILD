@@ -1,0 +1,4 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/glurbi/adventofcode2015
+gazelle(name = "gazelle")

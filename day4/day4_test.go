@@ -1,4 +1,4 @@
-package adventofcode2015
+package day4
 
 import (
 	"crypto/md5"

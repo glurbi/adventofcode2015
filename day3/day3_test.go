@@ -1,8 +1,10 @@
-package adventofcode2015
+package day3
 
 import (
 	"fmt"
 	"testing"
+
+	"github.com/glurbi/adventofcode2015/utils"
 )
 
 type location struct {
@@ -65,7 +67,7 @@ func TestDay_3_1(t *testing.T) {
 	test_day_3_1(t, ">", 2)
 	test_day_3_1(t, "^>v<", 4)
 	test_day_3_1(t, "^v^v^v^v^v", 2)
-	fmt.Printf("Day 3.1 => %v\n", Day_3_1(input("input/day3.txt")))
+	fmt.Printf("Day 3.1 => %v\n", Day_3_1(utils.Input("input/day3.txt")))
 }
 
 func test_day_3_2(t *testing.T, s string, want int) {
@@ -78,5 +80,5 @@ func TestDay_3_2(t *testing.T) {
 	test_day_3_2(t, "^v", 3)
 	test_day_3_2(t, "^>v<", 3)
 	test_day_3_2(t, "^v^v^v^v^v", 11)
-	fmt.Printf("Day 3.2 => %v\n", Day_3_2(input("input/day3.txt")))
+	fmt.Printf("Day 3.2 => %v\n", Day_3_2(utils.Input("input/day3.txt")))
 }
